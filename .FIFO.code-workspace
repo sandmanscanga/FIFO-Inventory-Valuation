@@ -1,0 +1,66 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "__pycache__/": true,
+      ".mypy_cache/": true,
+      ".idea/": true,
+      ".venv/": true,
+      ".bandit.yaml": true,
+      ".bumpversion.cfg": true,
+      ".gitattributes": true,
+      ".gitignore": true,
+      ".pre-commit-config.yaml": true,
+      ".python-version": true,
+      "pyproject.toml": true,
+      "poetry.lock": true,
+      "LICENSE": true,
+      "README.md": true,
+      "private/backups/": true,
+    },
+    "black-formatter.importStrategy": "fromEnvironment",
+    "black-formatter.args": [
+      "--line-length",
+      "79"
+    ],
+    "isort.importStrategy": "fromEnvironment",
+    "isort.args": [
+      "--line-length",
+      "79",
+      "--profile",
+      "black"
+    ],
+    "mypy.enabled": true,
+    "mypy.extraArguments": [
+      "--ignore-missing-imports",
+      "--strict"
+    ],
+    "pylint.importStrategy": "fromEnvironment",
+    "pylint.args": [
+      "--max-line-length",
+      "79"
+    ],
+    "flake8.importStrategy": "fromEnvironment",
+    "flake8.args": [
+      "--max-line-length",
+      "79"
+    ],
+    "bandit.importStrategy": "fromEnvironment",
+    "bandit.args": [
+      "-c",
+      "${workspaceFolder}/.bandit.yml"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.analysis.extraPaths": [
+      "${workspaceFolder}"
+    ],
+    "terminal.integrated.env.windows": {
+      "envFile": "${workspaceFolder}/.env"
+    },
+    "workbench.colorCustomizations": {}
+  }
+}

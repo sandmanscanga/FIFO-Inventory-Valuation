@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "fifo"
+version = "0.1.0"
+description = "A package for calculating inventory valuation, based on FIFO (first in first out)."
+license = "MIT"
+authors = ["sandmanscanga <59103444+sandmanscanga@users.noreply.github.com>"]
+readme = "README.md"
+homepage = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation/blob/master/README.md"
+repository = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation"
+keywords = ["app", "project", "python", "inventory", "valuation", "fifo"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+]
+packages = [{ include = "fifo", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+bandit = "*"
+black = "*"
+blacken-docs = "*"
+bumpversion = "*"
+colorama = "*"
+colorlog = "*"
+ipdb = "*"
+ipython = "*"
+isort = "*"
+mypy = "*"
+pre-commit = "*"
+pylint = "*"
+python-dotenv = "*"
+rich = "*"
+psutil = "*"
+notebook = "*"
+gitpython = "*"
+pydantic = "*"
+
+[tool.poetry.group.tests.dependencies]
+coverage = "*"
+pygments-pytest = "*"
+pytest = "*"
+pytest-benchmark = "*"
+pytest-cov = "*"
+pytest-emoji = "*"
+pytest-logdog = "*"
+pytest-menu = "*"
+pytest-mock = "*"
+pytest-pretty = "*"
+pytest-sorter = "*"
+pytest-threadleak = "*"
+
+[tool.poetry.group.docs.dependencies]
+click-man = "*"
+doc-utils = "*"
+meta-sphinx = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocstrings = "*"
+mkdocstrings-python = "*"
+pdoc3 = "*"
+pydocstyle = "*"
+sphinx = "*"
+sphinx-autodoc-annotation = "*"
+sphinx-autodoc-typehints = "*"
+sphinx-multi-theme = "*"
+sphinx-rtd-theme = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

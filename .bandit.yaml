@@ -1,0 +1,4 @@
+skips:
+  # Skip tests listed in this context
+
+exclude_dirs: ["private"]
