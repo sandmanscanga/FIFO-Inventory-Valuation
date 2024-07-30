@@ -1,21 +1,19 @@
 """
-This module serves as the entry point for the Katz application.
+This module serves as the entry point for the FIFO application.
 
 It contains the main function that is executed when the script is
 run. Currently, it only prints a welcome message to the user. You
 can also check the application version that is currently running.
 """
 
-import logging.config
 from argparse import ArgumentParser, Namespace
-from pathlib import Path
 
 from fifo import __version__
 
 
 def main(cmdline: Namespace) -> None:
     """
-    Main function for the Katz application.
+    Main function for the FIFO inventory valuation application.
 
     This function services as the entry point for the Katz
     application. There is a CLI parser that is used to parse
@@ -28,15 +26,15 @@ def main(cmdline: Namespace) -> None:
         by the CLI parser.
     """
     if cmdline.version:
-        print(f"Katz version {__version__}")
+        print(f"FIFO version {__version__}")
     else:
-        print("Welcome to the Katz application!")
+        print("The FIFO application is running.")
 
 
 if __name__ == "__main__":
     parser = ArgumentParser(
         description=(
-            "The Katz application, a solution for calculating FIFO "
+            "The FIFO application, a solution for calculating FIFO "
             "inventory valuations based using Excel spreadsheets."
         )
     )

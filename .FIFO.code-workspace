@@ -6,10 +6,10 @@
   ],
   "settings": {
     "files.exclude": {
-      "__pycache__/": true,
-      ".mypy_cache/": true,
-      ".idea/": true,
-      ".venv/": true,
+      "**/__pycache__/": true,
+      "**/.mypy_cache/": true,
+      "**/.idea/": true,
+      "**/.venv/": true,
       ".bandit.yaml": true,
       ".bumpversion.cfg": true,
       ".gitattributes": true,
@@ -20,7 +20,7 @@
       "poetry.lock": true,
       "LICENSE": true,
       "README.md": true,
-      "private/backups/": true,
+      "**/backups/": true,
     },
     "black-formatter.importStrategy": "fromEnvironment",
     "black-formatter.args": [
@@ -34,8 +34,8 @@
       "--profile",
       "black"
     ],
-    "mypy.enabled": true,
-    "mypy.extraArguments": [
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.args": [
       "--ignore-missing-imports",
       "--strict"
     ],
