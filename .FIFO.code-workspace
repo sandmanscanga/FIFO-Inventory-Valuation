@@ -16,7 +16,7 @@
       ".gitignore": true,
       ".pre-commit-config.yaml": true,
       ".python-version": true,
-      "pyproject.toml": true,
+      // "pyproject.toml": true,
       "poetry.lock": true,
       "LICENSE": true,
       "README.md": true,
