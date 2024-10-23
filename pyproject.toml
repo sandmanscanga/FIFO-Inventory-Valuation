@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fifo"
-version = "0.0.0"
+version = "0.1.0"
 description = "A package for calculating inventory valuation, based on FIFO (first in first out)."
 license = "MIT"
 authors = ["sandmanscanga <59103444+sandmanscanga@users.noreply.github.com>"]
