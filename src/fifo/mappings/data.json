@@ -1,0 +1,93 @@
+{
+  "Future - Combined - POS, SALES, INV - With JK examples": {
+    "path": "/home/sandman/Live/FIFO-Inventory-Valuation/private/Future - Combined - POS, SALES, INV - With JK examples.xlsx",
+    "mime": "excel",
+    "group": "alpha",
+    "columns": {
+      "type": "File",
+      "product": "Product Id",
+      "timestamp": {
+        "name": "Transaction Date",
+        "format": "MM/DD/YY"
+      },
+      "quantity": "Net Qty",
+      "buy": {
+        "cost": "Unit Calc BK"
+      }
+    },
+    "combined": [
+      "buy",
+      "sell",
+      "inventory"
+    ]
+  },
+  "Test Sales 0123-1223": {
+    "path": "/home/sandman/Live/FIFO-Inventory-Valuation/private/Test Sales 0123-1223.xlsx",
+    "mime": "excel",
+    "group": "bravo",
+    "columns": {
+      "buy": {
+        "product": "BK PRODUCT LEFT(16)",
+        "timestamp": {
+          "name": "Transaction Date",
+          "format": "MM/DD/YY"
+        },
+        "quantity": "Net Qty",
+        "cost": "Unit Calc BK",
+        "currency": "Transaction Currency"
+      }
+    }
+  },
+  "Test POS 0123-1223": {
+    "path": "/home/sandman/Live/FIFO-Inventory-Valuation/private/Test POS 0123-1223.xlsx",
+    "mime": "excel",
+    "group": "bravo",
+    "columns": {
+      "sell": {
+        "product": "Product Id",
+        "timestamp": {
+          "name": "Transaction Date",
+          "format": "MM/DD/YY"
+        },
+        "quantity": "Net Qty",
+        "currency": "Currency Cd"
+      }
+    }
+  },
+  "Test Inventory 0123-1223": {
+    "path": "/home/sandman/Live/FIFO-Inventory-Valuation/private/Test Inventory 0123-1223.xlsx",
+    "mime": "excel",
+    "group": "bravo",
+    "columns": {
+      "inventory": {
+        "product": "Part Id",
+        "timestamp": {
+          "name": "Mot Fisc Yyyymm Num",
+          "format": "MM/DD/YY"
+        },
+        "quantity": "Inventory Qty"
+      }
+    }
+  },
+  "staged-inventory-data": {
+    "path": "/home/sandman/Live/FIFO-Inventory-Valuation/private/staged-inventory-data.csv",
+    "mime": "csv",
+    "group": "charlie",
+    "columns": {
+      "type": true,
+      "product": 0,
+      "timestamp": {
+        "name": "Date",
+        "format": "YYYY-MM-DD"
+      },
+      "quantity": -2,
+      "buy": {
+        "cost": true,
+        "currency": null
+      },
+      "sell": {
+        "currency": null
+      }
+    }
+  }
+}
