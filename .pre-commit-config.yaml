@@ -2,17 +2,45 @@ default_stages: [commit, push]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
+      # Check YAML files for syntax errors
       - id: check-yaml
+
+      # Check JSON files for syntax errors
       - id: check-json
+
+      # Check Python abstract syntax trees for validity
       - id: check-ast
+
+      # Check TOML files for syntax errors
       - id: check-toml
+
+      # Check XML files for syntax errors
       - id: check-xml
+
+      # Format JSON files to be pretty and consistent
       - id: pretty-format-json
         args: ["--autofix"]
+
+      # Fix and sort requirements.txt files
       - id: requirements-txt-fixer
+
+      # Remove trailing whitespace from files
       - id: trailing-whitespace
+
+      # Ensure files end with a newline
       - id: end-of-file-fixer
+
+      # Fix mixed line endings (e.g., CRLF vs LF)
       - id: mixed-line-ending
         args: ["--fix=lf"]
+
+      # Detect AWS credentials to prevent accidental commits
+      - id: detect-aws-credentials
+
+      # Detect private keys to prevent accidental commits
+      - id: detect-private-key
+
+      # Detect debug statements like print() or breakpoint()
+      - id: debug-statements

@@ -1,4 +1,9 @@
-skips:
-  # Skip tests listed in this context
+# Configuration file for Bandit, a security linter for Python code
 
-exclude_dirs: ["private"]
+# List of tests to skip during analysis
+skips:
+  # Add specific test IDs to skip here
+
+# Directories to exclude from analysis
+exclude_dirs:
+  - "private"

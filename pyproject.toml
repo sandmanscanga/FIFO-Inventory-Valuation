@@ -1,23 +1,28 @@
 [tool.poetry]
-name = "fifo"
-version = "0.1.0"
-description = "A package for calculating inventory valuation, based on FIFO (first in first out)."
-license = "MIT"
 authors = ["sandmanscanga <59103444+sandmanscanga@users.noreply.github.com>"]
-readme = "README.md"
-homepage = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation/blob/master/README.md"
-repository = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation"
-keywords = ["app", "project", "python", "inventory", "valuation", "fifo"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Software Development",
-    "Typing :: Typed",
+    "Typing :: Typed"
 ]
+description = "A package for calculating inventory valuation, based on FIFO (first in first out)."
+homepage = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation/blob/master/README.md"
+keywords = ["app", "fifo", "inventory", "project", "python", "valuation"]
+license = "MIT"
+name = "fifo"
 packages = [{ include = "fifo", from = "." }]
+readme = "README.md"
+repository = "https://github.com/sandmanscanga/FIFO-Inventory-Valuation"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 
 [tool.poetry.group.dev.dependencies]
 bandit = "*"
@@ -26,18 +31,18 @@ blacken-docs = "*"
 bumpversion = "*"
 colorama = "*"
 colorlog = "*"
+gitpython = "*"
 ipdb = "*"
 ipython = "*"
 isort = "*"
 mypy = "*"
+notebook = "*"
 pre-commit = "*"
+psutil = "*"
+pydantic = "*"
 pylint = "*"
 python-dotenv = "*"
 rich = "*"
-psutil = "*"
-notebook = "*"
-gitpython = "*"
-pydantic = "*"
 
 [tool.poetry.group.tests.dependencies]
 coverage = "*"
@@ -54,7 +59,6 @@ pytest-sorter = "*"
 pytest-threadleak = "*"
 
 [tool.poetry.group.docs.dependencies]
-click-man = "*"
 doc-utils = "*"
 meta-sphinx = "*"
 mkdocs = "*"
@@ -70,5 +74,5 @@ sphinx-multi-theme = "*"
 sphinx-rtd-theme = "*"
 
 [build-system]
-requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
